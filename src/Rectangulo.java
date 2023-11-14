@@ -11,7 +11,7 @@ public class Rectangulo extends Figura{
         Scanner sc= new Scanner(System.in);
         System.out.println();
 
-        for (int i=0;i<4;i++){
+        for (int i=0;i<3;i++){
             System.out.println("Ingrese la componente X el punto: " +i);
             double x = sc.nextDouble();
             System.out.println("Ingrese la componente Y el punto: " +i);
@@ -21,11 +21,10 @@ public class Rectangulo extends Figura{
         }
     }
 
-    double calculrPerimetro(){
+    double calcularPerimetro(){
         Punto p1 = this.listaPunto.get(0);
         Punto p2 = this.listaPunto.get(1);
         Punto p3 = this.listaPunto.get(2);
-        Punto p4 = this.listaPunto.get(3);
 
         double l1=p1.calculoDistancia(p2);
         double l2=this.calculoDistancia(p1,p3);

@@ -18,7 +18,7 @@ public class Cuadrado extends Figura{
         }
     }
 
-    double calculrPerimetro(){
+    double calcularPerimetro(){
         Punto p1 = this.listaPunto.get(0);
         Punto p2 = this.listaPunto.get(1);
 

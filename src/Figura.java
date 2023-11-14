@@ -2,19 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Figura {
-    public double perimetro,area;
+    public double perimetro,area,volumen;
     public List<Punto> listaPunto = new ArrayList<>();
 
 
-
-
-    public Figura(double perimetro, double area, List<Punto> listaPunto) {
+    public Figura(double perimetro, double area, double volumen, List<Punto> listaPunto) {
         this.perimetro = perimetro;
         this.area = area;
+        this.volumen = volumen;
         this.listaPunto = listaPunto;
     }
-
-
 
     public Figura() {
     }
@@ -32,7 +29,9 @@ public class Figura {
     public void imprimirPerimetro(String figura){
         System.out.println("El perimetro del "+figura+ "es: "+perimetro);
     }
-
+    public void imprimirVolumen(String figura) {
+        System.out.println("El volumen de la " + figura + "es :"+volumen);
+    }
 
 
     public double getPerimetro() {
