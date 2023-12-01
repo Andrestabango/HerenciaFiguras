@@ -42,4 +42,9 @@ public class Piramide extends Triangulo {
         volumen = (l1*l1 *this.altura) / 3;
         return volumen;
     }
+
+    @Override
+    public void imprimirVolumen(String figura) {
+        System.out.println("El volumen de la " + figura + "es :"+volumen);
+    }
 }

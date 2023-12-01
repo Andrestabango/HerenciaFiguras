@@ -3,6 +3,11 @@ import java.util.List;
 public class Cubo extends Cuadrado {
     private double profundidad;
 
+    @Override
+    public void imprimirVolumen(String figura) {
+        System.out.println("El volumen de la " + figura + "es :"+volumen);
+    }
+
     public Cubo() {
         super();
         this.profundidad = 0;  // Inicializamos la profundidad a 0

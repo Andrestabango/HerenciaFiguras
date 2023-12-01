@@ -4,6 +4,22 @@ public class Cuadrado extends Figura{
     public Cuadrado() {
     }
 
+
+    @Override
+    public void imprimirArea(String figura){
+        System.out.println("El area del "+figura+ "es: "+area);
+    }
+    @Override
+    public void imprimirPerimetro(String figura){
+        System.out.println("El perimetro del "+figura+ "es: "+perimetro);
+    }
+
+    @Override
+    public void imprimirVolumen(String figura) {
+
+    }
+
+
     void ingresarPuntos(){
         Scanner sc= new Scanner(System.in);
         System.out.println();

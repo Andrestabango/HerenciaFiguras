@@ -16,6 +16,10 @@ public class Esfera extends Circulo {
             return this.volumen;
 
         }
+    @Override
+    public void imprimirVolumen(String figura) {
+        System.out.println("El volumen de la " + figura + "es :"+volumen);
+    }
 
 }
 

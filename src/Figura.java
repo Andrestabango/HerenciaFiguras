@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Figura {
+public abstract class Figura {
     public double perimetro,area,volumen;
     public List<Punto> listaPunto = new ArrayList<>();
 
@@ -22,16 +22,12 @@ public class Figura {
         return dist;
     }
 
-    public void imprimirArea(String figura){
-        System.out.println("El area del "+figura+ "es: "+area);
-    }
+    public abstract void imprimirArea(String figura);
 
-    public void imprimirPerimetro(String figura){
-        System.out.println("El perimetro del "+figura+ "es: "+perimetro);
-    }
-    public void imprimirVolumen(String figura) {
-        System.out.println("El volumen de la " + figura + "es :"+volumen);
-    }
+
+    public abstract void imprimirPerimetro(String figura);
+
+    public abstract void imprimirVolumen(String figura);
 
 
     public double getPerimetro() {

@@ -39,6 +39,11 @@ public class Ortoedro extends Rectangulo{
         volumen= this.getArea() * this.profundidad;
         return volumen;
     }
+
+    @Override
+    public void imprimirVolumen(String figura) {
+        System.out.println("El volumen de la " + figura + "es :"+volumen);
+    }
 }
 
 
